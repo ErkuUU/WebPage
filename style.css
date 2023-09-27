@@ -1,18 +1,17 @@
-/* Reset some default styles */
+
 body, h1, ul {
     margin: 0;
     padding: 0;
 }
-/* Apply a common font family and background color */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #c197d2; /* Background color */
-    color: #000000; /* Text color for the entire page */
+    background-color: #c197d2;
+    color: #000000; 
 }
 
-/* Header Styles */
 .banner {
 
     height: 100vh;
@@ -23,22 +22,20 @@ body {
     text-align: center;
 }
 
-/* Logo Styles */
 .logo {
-    position: fixed; /* Fixed position at the top left */
-    top: 0; /* Stick to the top of the viewport */
-    left: 0; /* Stick to the left of the viewport */
+    position: fixed; 
+    left: 0; 
     width: 120px;
     cursor: pointer;
-    z-index: 1001; /* Ensure it's above the navbar */
+    z-index: 1001; 
 }
 
 
 .navbar {
-    position: fixed; /* Fixed position at the top */
-    top: 0; /* Stick to the top of the viewport */
-    width: center; /* Span the full width */
-    z-index: 1000; /* Ensure it's above other content */
+    position: fixed;
+    top: 0;
+    width: center; 
+    z-index: 1000;
     transition: top 0.3s;
 }
 
@@ -60,38 +57,37 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     transition: color 0.3s;
-    color:#000000; /* Navbar text color */
+    color:#000000; 
 }
 
 .navbar ul li a:hover {
-    color: #613659; /* Navbar hover color */
+    color: #613659; 
 }
 
 
 .content h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #000000; /* Heading color */
+    color: #000000; 
 }
 
 .content p {
     font-size: 18px;
     margin-bottom: 30px;
-    color: #000000; /* Text color */
+    color: #000000; 
 }
 
 
-/* Container Styles */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
-    background-color: #b0157f; /* Container background color */
+    background-color: #b0157f; 
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-/* Section Styles */
+
 section {
     margin-top: 40px;
 }
@@ -101,7 +97,6 @@ section h2 {
     margin-bottom: 20px;
 }
 
-/* Footer Styles */
 footer {
     text-align: center;
     background-color: #333;
@@ -109,7 +104,7 @@ footer {
     padding: 10px 0;
 }
 
-/* Add or update the button styles */
+
 .btn-download {
     display: inline-block;
     padding: 10px 20px;
@@ -125,24 +120,23 @@ footer {
 }
 
 .btn-download:hover {
-    background-color: #686868; /* Hover background color */
+    background-color: #686868; 
 }
 
-/* Style for the icon (optional) */
 .btn-download::before {
-    content: '\f0ab'; /* Font Awesome download icon */
-    font-family: FontAwesome; /* Add a font icon library (e.g., Font Awesome) */
+    content: '\f0ab'; 
+    font-family: FontAwesome; 
     margin-right: 5px;
 }
 
-/* Update the button color when clicked (optional) */
+
 .btn-download:active {
-    background-color: #005d53; /* Active (clicked) background color */
+    background-color: #005d53; 
 }
 
 .contact-list {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove any default padding */
+    list-style: none; 
+    padding: 0; 
 }
 
 .contact-list li {
