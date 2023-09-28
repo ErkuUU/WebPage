@@ -310,6 +310,8 @@ section {
 
 /* EXPERIENCE SECTION */
 
+/* EXPERIENCE SECTION */
+
 #experience {
   position: relative;
 }
@@ -329,7 +331,7 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
+  text-align: center; /* Center-align text within article containers */
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
