@@ -389,6 +389,10 @@ article .icon {
   height: 2.5rem;
 }
 
+.x-icon {
+  margin-right: 10px;
+}
+
 /* FOOTER SECTION */
 
 footer {
