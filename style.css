@@ -367,6 +367,8 @@ article .icon {
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
+
+  
 }
 
 .contact-info-container {
@@ -390,7 +392,7 @@ article .icon {
 }
 
 .x-icon {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* FOOTER SECTION */
@@ -404,27 +406,6 @@ footer p {
   text-align: center;
 }
 
-/* Add this CSS code to your stylesheet */
-
-.character {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 100px; /* Adjust the character's width as needed */
-  height: 100px; /* Adjust the character's height as needed */
-  overflow: hidden;
-  position: relative;
-}
-
-.character .character-image {
-  width: 100%;
-  height: 100%;
-  background-image: url('./assets/attack_big.png'); /* Set the sprite sheet as the background image */
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation: moveSpriteSheet 1s steps(4) infinite; /* Adjust the animation as needed */
-}
 
 @keyframes moveSpriteSheet {
   from {
@@ -440,6 +421,8 @@ footer p {
 #character {
   width: 100px;
   margin: 0 auto;
+  height: auto;
+  
 }
 
 /* Adjust the width and height of the character container */
@@ -452,6 +435,8 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  
 }
 
 /* Adjust the width and height of the character image */
@@ -463,4 +448,41 @@ footer p {
   background-size: cover;
   animation: moveSpriteSheet 1s steps(4) infinite;
 }
+
+
+/* Add styling for the new character */
+#character-2 {
+  width: 100px; /* Adjust the character's width as needed */
+  margin: 0 auto; /* Adjust the margin as needed */
+  height: auto;
+}
+
+.character-2 {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-image-2 {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/walk.png'); /* Set the sprite sheet as the background image for the second character */
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: moveSpriteSheet2 0.5s steps(6) infinite; /* Adjust the animation as needed for the second character */
+}
+
+@keyframes moveSpriteSheet2 {
+  from {
+    background-position: 0 0; /* Starting position of the sprite for the second character */
+  }
+  to {
+    background-position: -600px 0; /* Adjust the X position to move the sprite for the second character */
+  }
+}
+
 
