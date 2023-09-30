@@ -399,3 +399,64 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* Add this CSS code to your stylesheet */
+
+.character {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px; /* Adjust the character's width as needed */
+  height: 100px; /* Adjust the character's height as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+.character .character-image {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/attack_big.png'); /* Set the sprite sheet as the background image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: moveSpriteSheet 1s steps(4) infinite; /* Adjust the animation as needed */
+}
+
+@keyframes moveSpriteSheet {
+  from {
+    background-position: 0 0; /* Starting position of the sprite */
+  }
+  to {
+    background-position: -400px 0; /* Adjust the X position to move the sprite */
+  }
+}
+
+
+/* Adjust the width of the character section and margin as needed */
+#character {
+  width: 100px;
+  margin: 0 auto;
+}
+
+/* Adjust the width and height of the character container */
+.character {
+  width: 100px;
+  height: 100px; /* Adjust the height as needed */
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adjust the width and height of the character image */
+.character .character-image {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/attack_big.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: moveSpriteSheet 1s steps(4) infinite;
+}
+
